@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Agregado para evitar problemas con el modelo de caja */
+}
+
+body {
+    background-image: url('../imgs/icebergs-laguna-glaciares-islandia.jpg');
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Agregado para manejar el desbordamiento en pantallas pequeñas */
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: green;
+}
+
+.right-button {
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.right-button:hover {
+    background-color: #2980b9;
+}
+
+.white-square {
+    width: 90%; /* Cambiado de 800px a 90% para ser más responsive */
+    max-width: 600px; /* Agregado para limitar el ancho máximo en pantallas grandes */
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-square h1 {
+    font-size: 40px;
+    margin: 15px;
+    text-align: center; /* Alineado al centro en pantallas pequeñas */
+}
+
+.white-square p {
+    margin: 15px;
+    text-align: center; /* Alineado al centro en pantallas pequeñas */
+}
+
+.white-square h3 {
+    margin: 15px;
+    text-align: center; /* Alineado al centro en pantallas pequeñas */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-form {
+    width: 90%; /* Cambiado de 60% a 90% para ser más responsive */
+    max-width: 600px; /* Agregado para limitar el ancho máximo en pantallas grandes */
+    margin: 50px auto;
+    padding: 20px; /* Cambiado de 40px a 20px */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Ajustado el margen superior */
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+ul li {
+    list-style: none;
+    margin: 10px;
+}
